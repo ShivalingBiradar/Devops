@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns Example</title>
+    <style>
+        /* Style for columns */
+        .column {
+            float: left;
+            width: 33.33%; /* Adjust this value based on your requirements */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style for the content inside columns */
+        .content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row">
+    <div class="column">
+        <div class="content">
+            <h2>Column 1</h2>
+            <p>This is the content of column 1.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <h2>Column 2</h2>
+            <p>This is the content of column 2.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <h2>Column 3</h2>
+            <p>This is the content of column 3.</p>
+        </div>
+    </div>
+</div>
+/* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+</body>
+</html>

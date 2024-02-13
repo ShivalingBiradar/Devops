@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+        /* Default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .box {
+                padding: 10px;
+            }
+        }
+        
+        /* Media query for even smaller screens */
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+            
+            .box {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="column">
+        <div class="content">
+            <h2>Column 3</h2>
+            <p>This is the content of column 3.</p>
+    <div class="box">
+        <h2>Media Queries</h2>
+        <p>Media queries allow you to apply CSS based on viewport size.</p>
+    </div>
+</div>
+
+</body>
+</html>
